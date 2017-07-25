@@ -78,7 +78,7 @@ aggregate(wine[-1], by=list(cluster=fit.km$cluster), mean)
 # compares to the actual wine types in wine$Type. Would you consider this a good
 # clustering?
 
-cluster <- table(wine$Type, fit.km$clusters)
+cluster <- table(wine$Type, fit.km$cluster)
 cluster
 
 # Exercise 6:
